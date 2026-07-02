@@ -1,6 +1,6 @@
 // This is a generated file; do not edit or check into version control.
 FLUTTER_ROOT=/Users/apple/Documents/flutter_versions/flutter
-FLUTTER_APPLICATION_PATH=/Users/apple/Desktop/ai_caption_app
+FLUTTER_APPLICATION_PATH=/Users/apple/Desktop/Image2Caption
 COCOAPODS_PARALLEL_CODE_SIGN=true
 FLUTTER_TARGET=lib/main.dart
 FLUTTER_BUILD_DIR=build
