@@ -133,3 +133,13 @@ Your OpenAI API key is **never hardcoded** in source code. It is loaded at runti
 - **share_plus** — native share sheet
 - **image_picker** — gallery + camera access
 - **flutter_dotenv** — `.env` loading
+
+---
+
+## Author
+
+**Neha Thakur**
+
+[![GitHub](https://img.shields.io/badge/GitHub-@nehathakur834-181717?style=flat&logo=github)](https://github.com/nehathakur834)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Neha%20Thakur-0A66C2?style=flat&logo=linkedin)](https://linkedin.com/in/Neha%20Thakur)
+[![Portfolio](https://img.shields.io/badge/Portfolio-nehathakurportfolio.netlify.app-7C3AED?style=flat&logo=netlify)](https://nehathakurportfolio.netlify.app)
