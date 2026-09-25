@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+  <defs>
+    <linearGradient id="brand" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6D28D9"/>
+      <stop offset="50%" stop-color="#9333EA"/>
+      <stop offset="100%" stop-color="#DB2777"/>
+    </linearGradient>
+    <linearGradient id="acc1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#9333EA"/>
+    </linearGradient>
+    <linearGradient id="acc2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EF4444"/>
+      <stop offset="100%" stop-color="#FF6B6B"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="390" height="844" rx="40" fill="#F8F7FC"/>
+
+  <!-- Status bar -->
+  <text x="36" y="34" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#1A1A2E">9:41</text>
+  <rect x="330" y="24" width="25" height="12" rx="3" fill="none" stroke="#1A1A2E" stroke-width="1.5"/>
+  <rect x="331" y="25" width="18" height="10" rx="2" fill="#1A1A2E"/>
+  <rect x="150" y="12" width="90" height="28" rx="14" fill="#1A1A2E"/>
+
+  <!-- App bar -->
+  <text x="20" y="88" font-family="system-ui,-apple-system,sans-serif" font-size="20" font-weight="800" fill="#1A1A2E" letter-spacing="-0.3">Settings</text>
+  <line x1="0" y1="104" x2="390" y2="104" stroke="#E9E4F5" stroke-width="1"/>
+
+  <!-- APPEARANCE section -->
+  <text x="20" y="128" font-family="system-ui,-apple-system,sans-serif" font-size="10" font-weight="800" fill="#9CA3AF" letter-spacing="1.2">APPEARANCE</text>
+
+  <rect x="20" y="138" width="350" height="138" rx="20" fill="white" stroke="#E9E4F5" stroke-width="1"/>
+  <!-- Light Mode -->
+  <rect x="36" y="154" width="36" height="36" rx="8" fill="url(#brand)"/>
+  <text x="54" y="177" font-family="system-ui,-apple-system,sans-serif" font-size="18" fill="white" text-anchor="middle">☀</text>
+  <text x="84" y="170" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="700" fill="#7C3AED">Light Mode</text>
+  <text x="348" y="175" font-family="system-ui,-apple-system,sans-serif" font-size="16" fill="#7C3AED" text-anchor="middle">✓</text>
+  <!-- divider -->
+  <line x1="74" y1="196" x2="354" y2="196" stroke="#E9E4F5" stroke-width="1"/>
+  <!-- Dark Mode -->
+  <rect x="36" y="204" width="36" height="36" rx="8" fill="#F3F0FA" stroke="#E9E4F5" stroke-width="1"/>
+  <text x="54" y="227" font-family="system-ui,-apple-system,sans-serif" font-size="18" fill="#6B7280" text-anchor="middle">🌙</text>
+  <text x="84" y="220" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="500" fill="#1A1A2E">Dark Mode</text>
+  <!-- divider -->
+  <line x1="74" y1="246" x2="354" y2="246" stroke="#E9E4F5" stroke-width="1"/>
+  <!-- System -->
+  <rect x="36" y="254" width="36" height="36" rx="8" fill="#F3F0FA" stroke="#E9E4F5" stroke-width="1"/>
+  <text x="54" y="277" font-family="system-ui,-apple-system,sans-serif" font-size="18" fill="#6B7280" text-anchor="middle">📱</text>
+  <text x="84" y="270" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="500" fill="#1A1A2E">System Default</text>
+
+  <!-- AI section -->
+  <text x="20" y="302" font-family="system-ui,-apple-system,sans-serif" font-size="10" font-weight="800" fill="#9CA3AF" letter-spacing="1.2">AI</text>
+
+  <rect x="20" y="312" width="350" height="128" rx="20" fill="white" stroke="#E9E4F5" stroke-width="1"/>
+  <rect x="36" y="328" width="36" height="36" rx="8" fill="url(#brand)"/>
+  <text x="54" y="351" font-family="system-ui,-apple-system,sans-serif" font-size="18" fill="white" text-anchor="middle">✦</text>
+  <text x="84" y="342" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#1A1A2E">AI Caption Generator</text>
+  <text x="84" y="358" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#6B7280">Powered by OpenAI Vision</text>
+  <line x1="74" y1="372" x2="354" y2="372" stroke="#E9E4F5" stroke-width="1"/>
+  <rect x="36" y="382" width="36" height="36" rx="8" fill="url(#acc2)"/>
+  <text x="54" y="405" font-family="system-ui,-apple-system,sans-serif" font-size="18" fill="white" text-anchor="middle">🔒</text>
+  <text x="84" y="396" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#1A1A2E">API Key Security</text>
+  <text x="84" y="412" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#6B7280">Keys never stored in source code</text>
+
+  <!-- APP section -->
+  <text x="20" y="460" font-family="system-ui,-apple-system,sans-serif" font-size="10" font-weight="800" fill="#9CA3AF" letter-spacing="1.2">APP</text>
+
+  <rect x="20" y="470" width="350" height="130" rx="20" fill="white" stroke="#E9E4F5" stroke-width="1"/>
+  <rect x="36" y="486" width="36" height="36" rx="8" fill="url(#acc1)"/>
+  <text x="54" y="509" font-family="system-ui,-apple-system,sans-serif" font-size="18" fill="white" text-anchor="middle">ℹ</text>
+  <text x="84" y="500" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#1A1A2E">About Image2Caption</text>
+  <text x="84" y="516" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#6B7280">Version 1.0.0 · AI social media tool</text>
+  <line x1="74" y1="530" x2="354" y2="530" stroke="#E9E4F5" stroke-width="1"/>
+  <rect x="36" y="540" width="36" height="36" rx="8" fill="url(#redGrad)"/>
+  <text x="54" y="563" font-family="system-ui,-apple-system,sans-serif" font-size="16" fill="white" text-anchor="middle">🗑</text>
+  <text x="84" y="554" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#EF4444">Clear History</text>
+  <text x="84" y="570" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#6B7280">Remove all saved captions</text>
+  <text x="348" y="563" font-family="system-ui,-apple-system,sans-serif" font-size="18" fill="#E9E4F5" text-anchor="middle">›</text>
+
+  <!-- Footer branding -->
+  <circle cx="195" cy="650" r="32" fill="url(#brand)"/>
+  <text x="195" y="660" font-family="system-ui,-apple-system,sans-serif" font-size="24" text-anchor="middle" dominant-baseline="central" fill="white">✦</text>
+  <text x="195" y="700" font-family="system-ui,-apple-system,sans-serif" font-size="18" font-weight="800" fill="#1A1A2E" text-anchor="middle">Image2Caption</text>
+  <text x="195" y="720" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#9CA3AF" text-anchor="middle">Powered by OpenAI · Built with Flutter</text>
+
+  <!-- Bottom nav -->
+  <rect x="0" y="772" width="390" height="72" fill="white"/>
+  <line x1="0" y1="772" x2="390" y2="772" stroke="#E9E4F5" stroke-width="1"/>
+  <text x="49" y="803" font-family="system-ui,-apple-system,sans-serif" font-size="17" text-anchor="middle" fill="#9CA3AF">⌂</text>
+  <text x="49" y="826" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#9CA3AF" text-anchor="middle">Home</text>
+  <text x="146" y="803" font-family="system-ui,-apple-system,sans-serif" font-size="17" text-anchor="middle" fill="#9CA3AF">✦</text>
+  <text x="146" y="826" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#9CA3AF" text-anchor="middle">Create</text>
+  <text x="244" y="803" font-family="system-ui,-apple-system,sans-serif" font-size="16" text-anchor="middle" fill="#9CA3AF">⊞</text>
+  <text x="244" y="826" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#9CA3AF" text-anchor="middle">History</text>
+  <!-- Settings selected -->
+  <rect x="306" y="782" width="70" height="32" rx="16" fill="url(#brand)"/>
+  <text x="341" y="803" font-family="system-ui,-apple-system,sans-serif" font-size="16" text-anchor="middle" fill="white">⚙</text>
+  <text x="341" y="826" font-family="system-ui,-apple-system,sans-serif" font-size="10" font-weight="700" fill="#7C3AED" text-anchor="middle">Settings</text>
+</svg>

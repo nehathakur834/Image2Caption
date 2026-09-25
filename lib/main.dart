@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:provider/provider.dart';
 
@@ -6,13 +7,22 @@ import 'providers/caption_provider.dart';
 import 'screens/app_shell.dart';
 import 'services/ai_caption_service.dart';
 import 'services/image_picker_service.dart';
+import 'theme/theme.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  SystemChrome.setSystemUIOverlayStyle(
+    const SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      statusBarIconBrightness: Brightness.dark,
+    ),
+  );
+
   try {
     await dotenv.load(fileName: 'assets/.env');
   } catch (_) {
-    // It's fine if no .env file exists; we still support --dart-define.
+    // Fine if no .env file exists; --dart-define is also supported.
   }
 
   const apiKeyFromDefine = String.fromEnvironment('OPENAI_API_KEY');
@@ -26,13 +36,13 @@ Future<void> main() async {
         aiCaptionService: OpenAiCaptionService(apiKey: apiKey),
         imagePickerService: ImagePickerService(),
       )..initialize(),
-      child: const AiCaptionGeneratorApp(),
+      child: const Image2CaptionApp(),
     ),
   );
 }
 
-class AiCaptionGeneratorApp extends StatelessWidget {
-  const AiCaptionGeneratorApp({super.key});
+class Image2CaptionApp extends StatelessWidget {
+  const Image2CaptionApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -40,64 +50,11 @@ class AiCaptionGeneratorApp extends StatelessWidget {
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'AI Caption Generator App',
+      title: 'Image2Caption',
       themeMode: provider.themeMode,
-      theme: _buildTheme(Brightness.light),
-      darkTheme: _buildTheme(Brightness.dark),
+      theme: AppTheme.light(),
+      darkTheme: AppTheme.dark(),
       home: const AppShell(),
-    );
-  }
-
-  ThemeData _buildTheme(Brightness brightness) {
-    final seedColor = brightness == Brightness.dark
-        ? const Color(0xFF8BD8BD)
-        : const Color(0xFF0E7C86);
-    final colorScheme = ColorScheme.fromSeed(
-      seedColor: seedColor,
-      brightness: brightness,
-    );
-
-    return ThemeData(
-      useMaterial3: true,
-      brightness: brightness,
-      colorScheme: colorScheme,
-      scaffoldBackgroundColor: brightness == Brightness.dark
-          ? const Color(0xFF08131A)
-          : const Color(0xFFF4F7FB),
-      appBarTheme: AppBarTheme(
-        centerTitle: false,
-        backgroundColor: Colors.transparent,
-        surfaceTintColor: Colors.transparent,
-        foregroundColor: colorScheme.onSurface,
-      ),
-      cardTheme: CardThemeData(
-        elevation: 0,
-        color: brightness == Brightness.dark
-            ? const Color(0xFF10202A)
-            : Colors.white,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
-      ),
-      chipTheme: ChipThemeData(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-      ),
-      inputDecorationTheme: InputDecorationTheme(
-        filled: true,
-        fillColor: brightness == Brightness.dark
-            ? const Color(0xFF132834)
-            : Colors.white,
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(20),
-          borderSide: BorderSide.none,
-        ),
-        enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(20),
-          borderSide: BorderSide.none,
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(20),
-          borderSide: BorderSide(color: colorScheme.primary, width: 1.4),
-        ),
-      ),
     );
   }
 }

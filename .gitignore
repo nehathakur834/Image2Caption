@@ -138,3 +138,10 @@ Desktop.ini
 
 *.swp
 *.tmp
+
+# ==========================
+# API Keys / Secrets
+# ==========================
+
+.env
+assets/.env
